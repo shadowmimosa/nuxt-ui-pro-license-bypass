@@ -1,32 +1,38 @@
-# Nuxt UI Pro Bypass
+# Nuxt UI Pro Bypass V2
 
-**The repository exists only to show the problem do not use this script in production !!!**
+> [!WARNING]  
+> TThis script is intended only for demonstrating the problem and should not be used in production.
 
-Instruction
-1. Place bypass.py into your repository with nuxt-ui-pro template
+> [!CAUTION]
+> Never use this in production — it may be illegal. :)
+
+### Instructions
+1. Install Docker on your system.
+2. Build the bypass image:
+
     ```
-    Project structure
-    - .nuxt
-    - app
-    - content
-    - node_modules
-    - public
-    - server
-    .env
-    bypass.py <---
-    and other files...
+    docker build https://github.com/qweme32/nuxt-ui-pro-license-bypass.git#main -t nuxt-pro-ui-bypass
     ```
-2. Install packages via npm
-    ```
-    npm i
-    ```
-3. Create .env file with content
+3. In your Nuxt project, create a `.env` file with the following content:
+
     ```
     # Production license for @nuxt/ui-pro, get one at https://ui.nuxt.com/pro/purchase
-    NUXT_UI_PRO_LICENSE=any-string
+    NUXT_UI_PRO_LICENSE=XD_BYPASSED
     ```
-4. Run python script
+4. Run the bypass:
+
     ```
-    python3 bypass.py
+    docker run --rm -v "$(pwd)/node_modules:/node_modules" nuxt-pro-ui-bypass
     ```
+
+### Change log
+- `Aug 21, 2024`
+
+    First bypass written as a small Python script.
+- `June 10, 2025`
+
+    Nuxt rewrote some build logic and added chunks. Second bypass rewritten in Rust and dockerized for easy use.
     
+---
+
+> Enjoy 😉

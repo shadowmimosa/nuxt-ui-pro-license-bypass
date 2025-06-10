@@ -1,0 +1,9 @@
+[package]
+name = "bypass"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+walkdir = "2.3"
+rayon = "1.7"
+colored = "2"
