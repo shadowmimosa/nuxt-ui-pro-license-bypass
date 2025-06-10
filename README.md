@@ -1,7 +1,7 @@
 # Nuxt UI Pro Bypass V2
 
 > [!WARNING]  
-> TThis script is intended only for demonstrating the problem and should not be used in production.
+> This script is intended only for demonstrating the problem and should not be used in production.
 
 > [!CAUTION]
 > Never use this in production — it may be illegal. :)

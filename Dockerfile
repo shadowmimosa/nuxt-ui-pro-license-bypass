@@ -7,7 +7,7 @@ RUN apt-get update && \
     rustup target add x86_64-unknown-linux-musl
 
 WORKDIR /usr/src/bypass
-COPY Cargo.toml Cargo.lock ./
+COPY Cargo.toml ./
 COPY src ./src
 
 # Build for the MUSL target (static binary)
