@@ -1,5 +1,8 @@
 # Nuxt UI Pro Bypass V2
 
+![img](https://i.ibb.co/PHD5ZDD/image.png)
+---
+
 > [!WARNING]  
 > This script is intended only for demonstrating the problem and should not be used in production.
 
